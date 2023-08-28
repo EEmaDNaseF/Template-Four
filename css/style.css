@@ -1,0 +1,309 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color : #E7637B;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,.7) ,rgba(0,0,0,.7) ) , url(../images/header-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+
+}
+.navbar {
+    background-color: transparent !important;
+}
+.navbar-nav .nav-link {
+    color: white !important;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--main-color) !important;
+}
+header .landing {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+header .landing .content {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+header .landing .content .special {
+    width: 450px;
+    margin: auto auto 24px auto;
+    font-size: 16px;
+
+}
+
+
+
+header .landing .content .btn {
+    background-color: transparent !important;
+    color: white;
+    border:  2px solid #333;
+    transition: all 0.5s;
+    padding: 10px 30px ;
+
+}
+header .landing .content .btn:hover {
+    background-color: black !important;
+    color: white !important;
+}
+header .landing .content h4 {
+    font-size: 24px ;
+    margin-bottom: 24px;
+}
+header .landing .content h1 {
+    font-size: 54px ;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+header .landing .content h1:after {
+    content: "";
+    right: 0;
+    width: 100%;
+    color:#E8E6E3;
+    animation:  typing 5s infinite ;
+}
+
+@keyframes typing {
+    0% {content : "|"}
+    3% {content : "D|"}
+    6% {content : "De|"}
+    9% {content : "Des|"}
+    12% {content : "Desi|"}
+    15% {content : "Desig|"}
+    18% {content : "Design|"}
+    21% {content : "Designe|"}
+    24% {content : "Designer|"}
+    27% {content : "Designer|"}
+    30% {content : "Designe|"}
+    33% {content : "Design|"}
+    37% {content : "Desig|"}
+    40% {content : "Desi|"}
+    43% {content : "Des|"}
+    46% {content : "De|"}
+    49% {content : "D|"}
+    52% {content : "De|"}
+    55% {content : "Dev|"}
+    58% {content : "Deve|"}
+    61% {content : "Devel|"}
+    64% {content : "Develo|"}
+    67% {content : "Develop|"}
+    70% {content : "Develope|"}
+    73% {content : "Developer|"}
+    76% {content : "Developer|"}
+    79% {content : "Develope|"}
+    82% {content : "Develop|"}
+    85% {content : "Develo|"}
+    88% {content : "Devel|"}
+    91% {content : "Deve|"}
+    94% {content : "Dev|"}
+    97% {content : "De|"}
+    100% {content : "D|"}
+}
+
+/* Start About */
+
+.about {
+    background-color:  #eee;
+    padding: 40px 0;
+}
+
+.about .container .left {
+    border: 2px solid white;
+    border-radius: 3px;
+
+}
+.about .container .left img {
+    padding: 3px;
+}
+
+.about .container .row .right .content h2{
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.about .container .row .right .content h3.special-2{
+    font-size: 24;
+    margin-bottom: 16px;
+}
+.about .container .row .right .content h3 span {
+    color: var(--main-color)
+}
+.about .container .row .right .content p {
+    margin-bottom: 16px;
+}
+.about .container .row .right .content .icons svg {
+    border: 2px solid #333;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.about .container .row .right .content .icons svg:hover {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+
+/* End About */
+
+/* Start Servecis */
+.servecis {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #ddd;
+}
+.servecis p.special-3 {
+    width: 450px;
+    margin: auto auto 30px auto; 
+    padding: 10px;
+}
+.servecis .container .row .card svg {
+    font-size: 44px;
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+.servecis .container .row .card h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.servecis .container .row .card h2:after {
+    position: absolute;
+    content: "";
+    background-color: var(--main-color);
+    width: 10%;
+    height: 2px;
+    bottom: -10px ;
+    left: 50%;
+    transform: translate( -50%);
+    transition: all .5s;
+}
+
+
+.servecis .container .row .card p {
+    margin-bottom: 20px;
+}
+.servecis .container .row .card:hover h2:after {
+    width: 30%;
+}
+/* End Servecis */
+
+
+
+
+/* Start Client */
+.client {
+    padding: 40px 0;
+    background-color: #eee;
+}
+.client p {
+    text-align: center;
+}
+.client p.special-4 {
+    width: 450px;
+    margin: auto auto 30px auto; 
+    padding: 10px;
+
+}
+.client .container .carousel-indicators {
+    position: static ;
+}
+.client .container .carousel-indicators button {
+    background-color: var(--main-color);
+    width: 10px;
+    transition: all .5s;
+}
+.client .container .carousel-indicators button.active {
+    width: 20px;
+}
+
+.client .container .carousel-inner .carousel-item p.special-5 {
+    margin: auto auto 40px auto;
+    width: 650px;
+}
+
+/* End Client */
+
+
+/* Start Blog */
+.blog {
+    padding: 40px 0;
+    background-color: #ddd;
+}
+.blog p.special-6{
+    width: 450px;
+    margin: auto auto 40px auto ;
+}
+.blog .container .row .card img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.blog .container .row .card a {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+
+}
+.blog .container .row .card p span {
+    color: var(--main-color);
+}
+
+/* End Blog */
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 768px) {
+    .about .container .left {
+        margin-bottom: 20px;
+    }
+    .client .container .carousel-inner .carousel-item p.special-5,
+    .client p.special-4 {
+        width: auto;
+    }
+    
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width : 535px) {
+    header .landing .content .special {
+        width: auto;
+        font-size: 14px;
+    }
+    header .landing .content h1 {
+        font-size: 30px;
+    }
+    .servecis p.special-3,
+    .blog p.special-6 {
+        width: auto;
+    }
+}
