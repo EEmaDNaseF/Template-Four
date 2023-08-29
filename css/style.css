@@ -268,6 +268,90 @@ header .landing .content h1:after {
 
 
 
+/* Start Portofolio */
+.portofolio {
+    padding: 40px 0;
+    background-color: #eee;
+}
+.portofolio p.special-7 {
+    width: 450px;
+    margin: auto auto 40px auto ;
+    padding: 15px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover{
+    background-color: var(--main-color) !important;
+    color: white;
+}
+.nav-pills .nav-link{
+    margin-right: 20px;
+}
+
+.portofolio .layer {
+    background-color: rgba(0, 0, 0, 0.318);
+    height: 100%;
+    top: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+.portofolio .photo {
+    overflow: hidden;
+}
+.portofolio .photo:hover .layer {
+    top: 0;
+}
+
+/* End Portofolio */
+
+
+/* Start Contact */
+.contact {
+    padding: 40px 0 ;
+    background-color: #ddd;
+}
+.contact p.special-8 {
+    width: 450px;
+    margin: auto auto 40px auto ;
+    padding: 15px;
+}
+.contact .container .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto auto 30px auto;
+}
+.contact .container .top .message-1 svg{
+    font-size: 44px;
+    margin: auto auto 20px auto;
+    color: var(--main-color);
+    display: block;
+}
+.contact .container .bottom .btn {
+    background-color: var(--main-color);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    width: 180px;
+}
+.contact .container .botton  {
+    text-align: right;
+}
+
+
+/* End Contact */
+
+
+
+
+
+
+
+
 
 
 
@@ -283,6 +367,9 @@ header .landing .content h1:after {
     .client .container .carousel-inner .carousel-item p.special-5,
     .client p.special-4 {
         width: auto;
+    }
+    .contact .container .top{
+        flex-direction: column;
     }
     
 
@@ -303,7 +390,9 @@ header .landing .content h1:after {
         font-size: 30px;
     }
     .servecis p.special-3,
-    .blog p.special-6 {
+    .blog p.special-6,
+    .portofolio p.special-7,
+    .contact p.special-8 {
         width: auto;
     }
 }
